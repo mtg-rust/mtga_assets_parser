@@ -1,0 +1,19 @@
+[package]
+name = "mtga_assets_parser"
+version = "0.1.0"
+authors = ["Stefano Giometti <stefano.giometti@gmail.com>"]
+edition = "2018"
+license = "MIT"
+description = "Library that reads and parses MTGA assets files"
+readme = "README.md"
+homepage = "https://github.com/mtg-rust/mtga_assets_parser"
+repository = "https://github.com/mtg-rust/mtga_assets_parser"
+
+exclude = [
+    ".github/",
+]
+
+[dependencies]
+mtga_resources_locator = "*"
+serde = { version = "1.0.114", features = ["derive"] }
+serde_json = "1.0.56"
